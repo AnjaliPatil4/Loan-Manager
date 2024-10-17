@@ -1,9 +1,13 @@
 import React from 'react';
-import { Line } from 'react-chartjs-2'; // Import the Line chart from React Chart.js 2
-import { Chart as ChartJS, LinearScale, PointElement, LineElement, CategoryScale, Title } from 'chart.js'; // Import necessary components from Chart.js
+// import { Line } from 'react-chartjs-2'; // Import the Line chart from React Chart.js 2
+// import { Chart as ChartJS, LinearScale, PointElement, LineElement, CategoryScale, Title } from 'chart.js'; // Import necessary components from Chart.js
 
-// Register components with Chart.js
-ChartJS.register(LinearScale, PointElement, LineElement, CategoryScale, Title);
+// // Register components with Chart.js
+// ChartJS.register(LinearScale, PointElement, LineElement, CategoryScale, Title);
+import { Line } from 'react-chartjs-2';
+import { Chart as ChartJS, registerables } from 'chart.js';
+
+ChartJS.register(...registerables);
 
 interface ChartProps {
   title: string;

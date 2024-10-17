@@ -1,9 +1,14 @@
 import React from 'react';
-import { Bar } from 'react-chartjs-2'; // Import the Bar chart from React Chart.js 2
-import { Chart as ChartJS, LinearScale, BarElement, CategoryScale, Title } from 'chart.js'; // Import necessary components from Chart.js
+// import { Bar } from 'react-chartjs-2'; // Import the Bar chart from React Chart.js 2
+// import { Chart as ChartJS, LinearScale, BarElement, CategoryScale, Title } from 'chart.js'; // Import necessary components from Chart.js
 
-// Register components with Chart.js
-ChartJS.register(LinearScale, BarElement, CategoryScale, Title);
+// // Register components with Chart.js
+// ChartJS.register(LinearScale, BarElement, CategoryScale, Title);
+
+import { Bar } from 'react-chartjs-2';
+import { Chart as ChartJS, registerables } from 'chart.js';
+
+ChartJS.register(...registerables);
 
 interface BarChartProps {
   title: string;
