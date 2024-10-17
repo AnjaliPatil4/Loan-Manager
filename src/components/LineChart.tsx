@@ -1,5 +1,5 @@
 import React from 'react';
-import { Line,Bar } from 'react-chartjs-2'; // Import the Line chart from React Chart.js 2
+import { Line } from 'react-chartjs-2'; // Import the Line chart from React Chart.js 2
 import { Chart as ChartJS, LinearScale, PointElement, LineElement, CategoryScale, Title } from 'chart.js'; // Import necessary components from Chart.js
 
 // Register components with Chart.js
