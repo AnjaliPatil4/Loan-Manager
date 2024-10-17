@@ -1,0 +1,77 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    height: 1.5rem;
+    color:  #0A512F;
+    /* Ensure it stays above other content */
+}
+
+.branding {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #0A512F;
+    display: flex;
+    align-items: center;
+    /* padding: 1rem; */
+}
+
+.nav-item .icon {
+    width: 10px;
+    height: 5px;
+    margin-right: 0.5rem;
+    padding: 1rem;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1rem;
+    margin-left: 15rem;
+     
+}
+
+.nav-icons .icon {
+    
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+}
+.select-role {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #0A512F;
+    background-color: #f5f5f5;
+    color: #0A512F;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.select-role:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+/* Optional: Add padding to the top of your body to prevent content from being hidden behind the navbar */
+body {
+    padding-top: 55px;
+    /* Adjust based on header height */
+}
